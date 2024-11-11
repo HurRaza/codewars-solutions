@@ -22,7 +22,7 @@ function multiply(num1, num2) {
         for (let j = 0; j < num2Rev.length; j++) {
             let product = (num1Rev[i]) * (num2Rev[j]);
             let sum = result[i + j] + product;
-            result[i + j] = sum % 10;      
+            result[i + j] = sum % 10;    
             result[i + j + 1] += Math.floor(sum / 10);
         }
     }
